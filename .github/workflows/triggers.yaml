@@ -1,9 +1,10 @@
 name: triggers
+run-name: triggers
 on:
   push:
     branches:
-      - main
-  schedule:
-    - cron: '30 5,17 * * *'
-  issue_comment: 
-		types:  [created, deleted]
+      - master
+  pull_request:
+    types: [openend, synchronize, reopened]
+  issues: 
+    types:  [created, deleted]
