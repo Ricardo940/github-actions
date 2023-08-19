@@ -3,7 +3,7 @@ run-name: triggers
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     types: [openend, synchronize, reopened]
   issues: 
